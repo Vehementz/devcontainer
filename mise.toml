@@ -2,3 +2,4 @@
 kubectl = "latest"
 bat = "latest"
 chezmoi = "latest"
+vim = "latest"
