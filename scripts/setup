@@ -5,6 +5,7 @@ set -euo pipefail
 /usr/local/bin/mise trust /workspaces/devcontainermise/mise.toml && /usr/local/bin/mise install
 # apt install vim
 
+<<<<<<< HEAD
 if command -v zsh >/dev/null; then
     sudo chsh -s $(command -v zsh) $USER
 fi
@@ -14,4 +15,6 @@ fi
 #   sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:mischavandenburg/dotfiles-demo.git
 # fi
 # exit 0
+=======
+>>>>>>> 8af4d4c (some tools added)
 
