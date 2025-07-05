@@ -1,2 +1,3 @@
-/usr/local/bin/mise trust /workspaces/devcontainermise/mise.toml
+#!/bin/bash
 
+/usr/local/bin/mise trust /workspaces/devcontainermise/mise.toml && /usr/local/bin/mise install
