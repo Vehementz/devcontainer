@@ -1,4 +1,17 @@
 #!/bin/bash
 
+set -euo pipefail
+
 /usr/local/bin/mise trust /workspaces/devcontainermise/mise.toml && /usr/local/bin/mise install
 # apt install vim
+
+if command -v zsh >/dev/null; then
+    sudo chsh -s $(command -v zsh) $USER
+fi
+
+### Maybe need to revert to it 
+# if ! command -v chezmoi >/dev/null; then
+#   sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:mischavandenburg/dotfiles-demo.git
+# fi
+# exit 0
+
